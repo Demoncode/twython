@@ -29,6 +29,10 @@ class TwythonStreamerTypes(object):
               % self.streamer.api_version
         self.streamer._request(url, params=params)
 
+    def custom(self, url, **params):
+        """Point the streamer to a custom url """
+        self.streamer._request(url, 'POST', params=params)
+
 
 class TwythonStreamerTypesStatuses(object):
     """Class for different statuses endpoints

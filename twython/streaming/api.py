@@ -55,6 +55,7 @@ class TwythonStreamer(object):
         self.statuses = StreamTypes.statuses
         self.user = StreamTypes.user
         self.site = StreamTypes.site
+        self.custom = StreamTypes.custom
 
         self.connected = False
 
